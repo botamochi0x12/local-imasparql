@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jre
+FROM eclipse-temurin:17-jre
 
 # FusekiとJenaのバージョンを指定
 ENV FUSEKI_VERSION=4.10.0
