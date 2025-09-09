@@ -46,6 +46,7 @@ RUN chmod +x /convert.sh
 RUN sh /convert.sh
 
 EXPOSE 3030
+WORKDIR ${FUSEKI_BASE}
 
 # Fusekiサーバーを起動
 CMD ["/opt/fuseki/fuseki-server", "--update", "--loc=/fuseki/databases/imasdb", "/imasparql"]
